@@ -1,0 +1,21 @@
+let greet = require('./greet1');
+let greet2 = require('./greet2').greet;
+let greet2a = require('./greet2');
+const greet3 = require('./greet3');
+let greet3b = require('./greet3');
+const Greet4 = require('./greet4');
+const greet5 = require('./greet5');
+
+greet();
+greet2a.greet();
+greet2();
+console.log(greet3);
+greet3.greet();
+greet3.greeting = "Hello from the App";
+greet3b.greet();
+let myGreet = new Greet4;
+myGreet.greet();
+greet5.greet();
+greet5.jump();
+greet5.run();
+greet5.sum();
